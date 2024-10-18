@@ -12,7 +12,7 @@
 
 
 <p align="center">
-  <img src="https://github.com/GreyMattersBot/url-auto-delete-shortener-bot/blob/main/assets/IMG_20220105_010453-removebg-preview.png" alt="Umesh Gurjar's Bot Logo">
+  <img src="https://graph.org/file/04aca4acdbdafd2660c25-aeedd571cf308b6ca5.jpg" alt="Umesh Gurjar's Bot Logo">
 </p>
 <h1 align="center">
   <b>Umesh Gurjar's Bot</b>
