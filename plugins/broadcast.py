@@ -8,12 +8,12 @@ from utils import broadcast_messages
 import asyncio
         
 @Client.on_message(filters.command("broadcast") & filters.user(ADMINS) & filters.reply)
-# https://t.me/ugmoviez
+# https://t.me/GetTGLink/4178
 async def verupikkals(bot, message):
     users = await db.get_all_users()
     b_msg = message.reply_to_message
     sts = await message.reply_text(
-        text='Broadcasting your messages...😁...'
+        text='Broadcasting your messages...'
     )
     start_time = time.time()
     total_users = await db.total_users_count()
