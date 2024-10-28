@@ -68,7 +68,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer("Yᴏᴜ ᴀʀᴇ ᴜꜱɪɴɢ ᴏɴᴇ ᴏғ ᴍʏ ᴏʟᴅ ᴍᴇꜱꜱᴀɢᴇꜱ, ᴘʟᴇᴀꜱᴇ ꜱᴇɴᴅ ᴛʜᴇ ʀᴇǫᴜᴇꜱᴛ ᴀɢᴀɪɴ.", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -447,7 +447,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙸𝙾𝙽𝚂', callback_data='coct'),
             InlineKeyboardButton('𝙴𝚇𝚃𝚁𝙰 𝙼𝙾D𝚂', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='{script.HOME}'),
+            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='about'),
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -457,7 +457,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='{script.HOME}'),
+            InlineKeyboardButton('🏠 H𝙾𝙼𝙴 🏠', callback_data='about'),
          ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -760,7 +760,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("Eɪᴛʜᴇʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ʏᴇᴛ ᴏʀ ʏᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴡʀɪᴛᴛᴇɴ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴄᴏʀʀᴇᴄᴛʟʏ, ᴛʀʏ ᴀɢᴀɪɴ. Iғ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʙʟᴇ ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ʀᴇǫᴜᴇꜱᴛ ғᴏʀ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏɴ @UGMoviez.")
         await asyncio.sleep(8)
         await k.delete()
         return
