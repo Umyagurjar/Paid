@@ -426,7 +426,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton(' 𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('⚡ 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 ⚡', url='https://youtube.com/@jai13907'),
+            InlineKeyboardButton('⚡ 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄 ⚡', url='https://youtube.com/@jai13agjaj907'),
             InlineKeyboardButton(' 🗿 𝐔𝐏𝐃𝐀𝐓𝐄𝐃𝐒 👀', url='{script.HOME_BUTTONURL_UPDATES}')
         ], [
             InlineKeyboardButton('😊 𝐇𝐄𝐋𝐏 🤗', callback_data='help'),
@@ -760,7 +760,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("Eɪᴛʜᴇʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ʏᴇᴛ ᴏʀ ʏᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴡʀɪᴛᴛᴇɴ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴄᴏʀʀᴇᴄᴛʟʏ, ᴛʀʏ ᴀɢᴀɪɴ. Iғ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʙʟᴇ ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ʀᴇǫᴜᴇꜱᴛ ғᴏʀ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏɴ @UGMoviez.")
+        k = await msg.reply("Eɪᴛʜᴇʀ ᴛʜɪꜱ ᴍᴏᴠɪᴇ ʜᴀꜱ ɴᴏᴛ ʙᴇᴇɴ ʀᴇʟᴇᴀꜱᴇᴅ ʏᴇᴛ ᴏʀ ʏᴏᴜ ʜᴀᴠᴇ ɴᴏᴛ ᴡʀɪᴛᴛᴇɴ ᴛʜᴇ ꜱᴘᴇʟʟɪɴɢ ᴄᴏʀʀᴇᴄᴛʟʏ, ᴛʀʏ ᴀɢᴀɪɴ. Iғ ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴀʙʟᴇ ᴛᴏ ғɪɴᴅ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴛʜᴇɴ ʏᴏᴜ ᴄᴀɴ ʀᴇǫᴜᴇꜱᴛ ғᴏʀ ᴛʜᴇ ᴍᴏᴠɪᴇ ᴏɴ @mrfree_boy.")
         await asyncio.sleep(8)
         await k.delete()
         return
